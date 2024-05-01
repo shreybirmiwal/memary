@@ -12,7 +12,7 @@ from pyvis.network import Network
 
 # src should sit in the same level as /streamlit_app
 curr_dir = os.getcwd()
-parent_dir = os.path.dirname(curr_dir)
+parent_dir = os.path.dirname(curr_dir) + '/memary'
 print(parent_dir)
 sys.path.append(parent_dir)
 
@@ -161,4 +161,3 @@ if generate_clicked:
         df_top = pd.DataFrame(top_entities)
         st.write("Top 20 Entities")
         st.dataframe(df_top)
-
