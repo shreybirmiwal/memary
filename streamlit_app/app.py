@@ -95,18 +95,17 @@ cypher_query = "MATCH p = (:Entity)-[r]-()  RETURN p, r LIMIT 1000;"
 answer = ""
 external_response = ""
 st.title("memary Demo")
+
 query = st.text_input("Ask a question")
+
 
 img_url = st.text_input("URL of image, leave blank if no image to provide")
 if img_url:
     st.image(img_url, caption="Uploaded Image", use_column_width=True)
 
 
-left,right = st.columns(5)
-with left:
-    generate_clicked = st.button("Generate")
-with right:
-    reset_clicked = st.button("Reset DB")
+generate_clicked = st.button("Generate")
+reset_clicked = st.button("Reset DB")
 
 
 if(reset_clicked):
