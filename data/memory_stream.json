@@ -34,5 +34,697 @@
     {
         "entity": "Openai",
         "date": "2024-04-30T21:47:22"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:03:25"
+    },
+    {
+        "entity": "Develop artificial general intelligence",
+        "date": "2024-04-30T22:09:17"
+    },
+    {
+        "entity": "Developing artificial general intelligence",
+        "date": "2024-04-30T22:09:17"
+    },
+    {
+        "entity": "Ai startup",
+        "date": "2024-04-30T22:09:17"
+    },
+    {
+        "entity": "Openai",
+        "date": "2024-04-30T22:09:17"
+    },
+    {
+        "entity": "Research organization",
+        "date": "2024-04-30T22:09:17"
+    },
+    {
+        "entity": "President",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "Computer programmer",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "American entrepreneur",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "Investor",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "Y combinator",
+        "date": "2024-04-30T22:11:35"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:13:43"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:14:44"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Most populous state",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:25:08"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "State government",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Most populous state",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:27:22"
+    },
+    {
+        "entity": "President of y combinator",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "President",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "Y combinator",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "American entrepreneur",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "Computer programmer",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "Investor",
+        "date": "2024-04-30T22:29:22"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:31:39"
+    },
+    {
+        "entity": "Elon musk",
+        "date": "2024-04-30T22:31:39"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "State government",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Diverse population",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "United states",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Technology industries",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Most populous state",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:36:44"
+    },
+    {
+        "entity": "State",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "State government",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Diverse population",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "United states",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Technology industries",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Most populous state",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:37:49"
+    },
+    {
+        "entity": "Elon musk",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Good relationship",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Computer programmer",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "President",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "American entrepreneur",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Co-founder",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Investor",
+        "date": "2024-04-30T22:50:00"
+    },
+    {
+        "entity": "Openai",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Leading",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Development of the electric vehicle market",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Elon musk",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Good relationship",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Business magnate",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "President",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "American entrepreneur",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Neuralink",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Advancements in space exploration",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Reducing global warming",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Reducing the risk of human extinction",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Co-founder",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Spacex",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Investor",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "The boring company",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Computer programmer",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Entrepreneur",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Founding",
+        "date": "2024-04-30T22:51:19"
+    },
+    {
+        "entity": "Openai",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Leading",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Development of the electric vehicle market",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Elon musk",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Good relationship",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Business magnate",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "President",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "American entrepreneur",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Neuralink",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Advancements in space exploration",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Co-founding companies",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Sam altman",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Reducing global warming",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Reducing the risk of human extinction",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Co-founder",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Spacex",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Investor",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "The boring company",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Computer programmer",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Entrepreneur",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "Founding",
+        "date": "2024-04-30T22:51:35"
+    },
+    {
+        "entity": "State",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "U.s.",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Technology industries",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Diverse population",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Individuals",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "California",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Most populous state",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Spacex",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "U.s. state",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Technology",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Startups",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Tourism",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Uber",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "39 million residents",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Agriculture",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Entertainment",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "State government",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Airbnb",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "United states",
+        "date": "2024-04-30T22:55:30"
+    },
+    {
+        "entity": "Major cities",
+        "date": "2024-04-30T22:55:30"
     }
 ]

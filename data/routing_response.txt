@@ -1,7 +1,7 @@
 Thought: I need to use a tool to help me answer the question.
 Action: search
-Action Input: {'query': 'openai'}
+Action Input: {'query': 'California startups'}
 Observation: 
-OpenAI is a research organization focused on developing artificial general intelligence.
+California is known for its technology industries and is home to many startups.
 Thought: I can answer without using any more tools.
-Answer: OpenAI is a research organization focused on developing artificial general intelligence.
+Answer: California is a hub for startups, with Silicon Valley being the most well-known location. Some notable California startups include Uber, Airbnb, and SpaceX.

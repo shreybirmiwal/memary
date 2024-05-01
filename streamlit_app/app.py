@@ -80,6 +80,17 @@ def fill_graph(nodes, edges, cypher_query):
                 entities.extend([n1_id, n2_id])
 
 
+def edit_nodes(edited_nodes):
+    for node, new_value in edited_nodes.items():
+        # Check if the node was edited (compare new value with original value)
+        original_value = nodes[node]  # Assuming nodes is accessible globally
+        if new_value != original_value:
+            print(f"EDITED NODE: {node} - New Value: {new_value}")
+
+def reset_db():
+    #reset the db
+    print("reset graph")
+
 cypher_query = "MATCH p = (:Entity)-[r]-()  RETURN p, r LIMIT 1000;"
 answer = ""
 external_response = ""
@@ -90,7 +101,17 @@ img_url = st.text_input("URL of image, leave blank if no image to provide")
 if img_url:
     st.image(img_url, caption="Uploaded Image", use_column_width=True)
 
-generate_clicked = st.button("Generate")
+
+left,right = st.columns(5)
+with left:
+    generate_clicked = st.button("Generate")
+with right:
+    reset_clicked = st.button("Reset DB")
+
+
+if(reset_clicked):
+    reset_db()
+
 st.write("")
 
 if generate_clicked:
@@ -131,9 +152,29 @@ if generate_clicked:
         graph = create_graph(nodes, edges)
         graph_html = graph.generate_html(f"graph_{random.randint(0, 1000)}.html")
         components.html(graph_html, height=500, scrolling=True)
+
+
+        # this shows all the nodes and allows the user to edit them
+        st.text("Click on the node to edit:")
+        editedNodes = list(nodes)  # Convert the set to a list
+        old_nodes = list(nodes)
+        with st.container(height=200):
+            for i in range(len(editedNodes)):
+                editedNodes[i] = st.text_input(old_nodes[i], editedNodes[i])
+
+        # submit button
+        updateNodesSubmit = st.button("Submit")
+
     else:
         st.subheader("Knowledge Graph")
         st.text("No information found in the knowledge graph")
+
+
+    if(updateNodesSubmit):
+        print("SUBKITCLICKED FOR UPDATE NODSe!")
+        edited_nodes = dict(zip(old_nodes, editedNodes))
+        edit_nodes(edited_nodes)
+
 
     st.subheader("Final Response")
     wrapped_text = textwrap.fill(answer, width=80)
