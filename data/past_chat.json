@@ -22,5 +22,21 @@
     {
         "role": "user",
         "content": "rag: Y Combinator"
+    },
+    {
+        "role": "user",
+        "content": "Who is paul graham?"
+    },
+    {
+        "role": "user",
+        "content": "ReAct agent: Paul Graham is a well-known entrepreneur, essayist, and creator of the startup incubator Y Combinator. He co-founded Y Combinator in 2005 with Jessica Livingston, and the organization has since launched over 2,000 companies. Graham's essays on entrepreneurship, startup culture, and programming have been published on his website, Paulgraham.com, since 1998. He is also an investor and advisor to various startups."
+    },
+    {
+        "role": "user",
+        "content": "What does openai do? "
+    },
+    {
+        "role": "user",
+        "content": "rag: OpenAI is a research organization focused on developing artificial general intelligence."
     }
 ]

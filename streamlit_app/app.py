@@ -124,7 +124,7 @@ if generate_clicked:
         edges = []  # (node1, node2, [relationships])
         fill_graph(nodes, edges, cypher_query)
 
-        st.subheader("Knoweldge Graph")
+        st.subheader("Knowledge Graph")
         st.code("# Current Cypher Used\n" + cypher_query)
         st.write("")
         st.text("Subgraph:")

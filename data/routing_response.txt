@@ -1,7 +1,7 @@
 Thought: I need to use a tool to help me answer the question.
 Action: search
-Action Input: {'query': 'Sam Altman companies'}
+Action Input: {'query': 'openai'}
 Observation: 
-Y combinator
+OpenAI is a research organization focused on developing artificial general intelligence.
 Thought: I can answer without using any more tools.
-Answer: Y Combinator
+Answer: OpenAI is a research organization focused on developing artificial general intelligence.
