@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "what is 2+2"
+    },
+    {
+        "role": "user",
+        "content": "ReAct agent: 4"
+    },
+    {
+        "role": "user",
+        "content": "Who is Sam Altman"
+    },
+    {
+        "role": "user",
+        "content": "ReAct agent: Sam Altman is a prominent American entrepreneur, investor, and computer programmer. He co-founded Y Combinator, a startup accelerator, and served as its president from 2014 to 2019. Altman is also known for his work in artificial intelligence and has been a vocal advocate for its potential benefits and risks. He currently serves as the CEO of OpenAI, a research organization focused on developing artificial general intelligence."
+    },
+    {
+        "role": "user",
+        "content": "What companies did Sam Altman found?"
+    },
+    {
+        "role": "user",
+        "content": "rag: Y Combinator"
+    }
+]

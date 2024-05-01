@@ -1,0 +1,7 @@
+Thought: I need to use a tool to help me answer the question.
+Action: search
+Action Input: {'query': 'Sam Altman companies'}
+Observation: 
+Y combinator
+Thought: I can answer without using any more tools.
+Answer: Y Combinator

@@ -1,0 +1,32 @@
+[
+    {
+        "entity": "President",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    },
+    {
+        "entity": "Computer programmer",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    },
+    {
+        "entity": "Sam altman",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    },
+    {
+        "entity": "Y combinator",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    },
+    {
+        "entity": "Investor",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    },
+    {
+        "entity": "American entrepreneur",
+        "count": 1,
+        "date": "2024-04-30T21:38:48"
+    }
+]

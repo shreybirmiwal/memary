@@ -62,7 +62,7 @@ class Agent(object):
         load_dotenv()
         # getting necessary API keys
         os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-        googlemaps_api_key = os.getenv("GOOGLEMAPS_API_KEY")
+        # googlemaps_api_key = os.getenv("GOOGLEMAPS_API_KEY")
         pplx_api_key = os.getenv("PERPLEXITY_API_KEY")
 
         # Neo4j credentials
@@ -85,7 +85,7 @@ class Agent(object):
         self.query_llm = Perplexity(
             api_key=pplx_api_key, model="mistral-7b-instruct", temperature=0.5
         )
-        self.gmaps = googlemaps.Client(key=googlemaps_api_key)
+        # self.gmaps = googlemaps.Client(key=googlemaps_api_key)
         Settings.llm = llm
         Settings.chunk_size = 512
 
@@ -111,12 +111,14 @@ class Agent(object):
         )
 
         search_tool = FunctionTool.from_defaults(fn=self.search)
-        locate_tool = FunctionTool.from_defaults(fn=self.locate)
+        # locate_tool = FunctionTool.from_defaults(fn=self.locate)
         vision_tool = FunctionTool.from_defaults(fn=self.vision)
 
         self.debug = debug
         self.routing_agent = ReActAgent.from_tools(
-            [search_tool, locate_tool, vision_tool], llm=llm, verbose=True
+            [search_tool, vision_tool], llm=llm, verbose=True
+            # [search_tool, locate_tool, vision_tool], llm=llm, verbose=True
+
         )
 
         self.memory_stream = MemoryStream(memory_stream_json)
@@ -148,14 +150,14 @@ class Agent(object):
         else:
             return response
 
-    def locate(self, query: str) -> str:
-        """Finds the current geographical location"""
-        location = geocoder.ip("me")
-        lattitude, longitude = location.latlng[0], location.latlng[1]
+    # def locate(self, query: str) -> str:
+    #     """Finds the current geographical location"""
+    #     location = geocoder.ip("me")
+    #     lattitude, longitude = location.latlng[0], location.latlng[1]
 
-        reverse_geocode_result = self.gmaps.reverse_geocode((lattitude, longitude))
-        formatted_address = reverse_geocode_result[0]["formatted_address"]
-        return "Your address is" + formatted_address
+    #     reverse_geocode_result = self.gmaps.reverse_geocode((lattitude, longitude))
+    #     formatted_address = reverse_geocode_result[0]["formatted_address"]
+    #     return "Your address is" + formatted_address
 
     def vision(self, query: str, img_url: str) -> str:
         """Uses computer vision to process the image specified by the image url and answers the question based on the CV results"""
@@ -303,6 +305,9 @@ class Agent(object):
         """Get response from the ReAct."""
         response = ""
         if self.debug:
+            print("YIPEE ! " )
+            print("Current working directory:", os.getcwd())
+
             # writes ReAct agent steps to separate file and modifies format to be readable in .txt file
             with open("data/routing_response.txt", "w") as f:
                 orig_stdout = sys.stdout
