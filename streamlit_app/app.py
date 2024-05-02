@@ -12,7 +12,7 @@ from pyvis.network import Network
 
 # src should sit in the same level as /streamlit_app
 curr_dir = os.getcwd()
-parent_dir = os.path.dirname(curr_dir) + '/memary'
+parent_dir = os.path.dirname(curr_dir)
 print(parent_dir)
 sys.path.append(parent_dir)
 
@@ -35,7 +35,7 @@ chat_agent = ChatAgent(
 )
 
 
-def create_graph():
+def create_graph(nodes, edges):
     g = Network(
         notebook=True,
         directed=True,
@@ -44,9 +44,10 @@ def create_graph():
         width="100%",
     )
 
-    for node in st.session_state.nodes:
+    for node in nodes:
         g.add_node(node, label=node, title=node)
-    for edge in st.session_state.edges:
+    for edge in edges:
+        # assuming only one relationship type per edge
         g.add_edge(edge[0], edge[1], label=edge[2][0])
 
     g.repulsion(
@@ -59,7 +60,8 @@ def create_graph():
     return g
 
 
-def fill_graph(cypher_query):
+def fill_graph(nodes, edges, cypher_query):
+    entities = []
     with GraphDatabase.driver(
         uri=chat_agent.neo4j_url,
         auth=(chat_agent.neo4j_username, chat_agent.neo4j_password),
@@ -72,26 +74,16 @@ def fill_graph(cypher_query):
 
                 n1_id = record["p"].nodes[0]["id"]
                 n2_id = record["p"].nodes[1]["id"]
-                st.session_state.nodes.add(n1_id)
-                st.session_state.nodes.add(n2_id)
-                st.session_state.edges.append((n1_id, n2_id, rels))
-
-
-def edit_nodes(edited_nodes):
-    print(edited_nodes)
-    print(f"EDITED NODE!")
-
-
-def reset_db():
-    # reset the db
-    print("reset graph")
+                nodes.add(n1_id)
+                nodes.add(n2_id)
+                edges.append((n1_id, n2_id, rels))
+                entities.extend([n1_id, n2_id])
 
 
 cypher_query = "MATCH p = (:Entity)-[r]-()  RETURN p, r LIMIT 1000;"
 answer = ""
 external_response = ""
 st.title("memary Demo")
-
 query = st.text_input("Ask a question")
 
 img_url = st.text_input("URL of image, leave blank if no image to provide")
@@ -99,13 +91,7 @@ if img_url:
     st.image(img_url, caption="Uploaded Image", use_column_width=True)
 
 generate_clicked = st.button("Generate")
-
 st.write("")
-
-if "nodes" not in st.session_state:
-    st.session_state.nodes = set()
-if "edges" not in st.session_state:
-    st.session_state.edges = []
 
 if generate_clicked:
     if img_url:
@@ -134,37 +120,17 @@ if generate_clicked:
     st.text(str(routing_response))
 
     if cypher_query:
-        fill_graph(cypher_query)
+        nodes = set()
+        edges = []  # (node1, node2, [relationships])
+        fill_graph(nodes, edges, cypher_query)
 
-        st.subheader("Knowledge Graph")
+        st.subheader("Knoweldge Graph")
         st.code("# Current Cypher Used\n" + cypher_query)
         st.write("")
         st.text("Subgraph:")
-        graph = create_graph()
+        graph = create_graph(nodes, edges)
         graph_html = graph.generate_html(f"graph_{random.randint(0, 1000)}.html")
         components.html(graph_html, height=500, scrolling=True)
-
-
-
-
-
-
-        st.text("Click on the node to edit:")
-        editedNodes = list(st.session_state.nodes) 
-        old_nodes = list(st.session_state.nodes)
-
-        with st.form("node_edit_form"):
-            with st.container(height=200):
-                for i in range(len(editedNodes)):
-                    editedNodes[i] = st.text_input(old_nodes[i], editedNodes[i], key=i)
-
-            submitted = st.form_submit_button("Submit")
-
-        if submitted:
-            print("SUBKITCLICKED FOR UPDATE NODSe!")
-            edited_nodes = dict(zip(old_nodes, editedNodes))
-            edit_nodes(edited_nodes)
-
     else:
         st.subheader("Knowledge Graph")
         st.text("No information found in the knowledge graph")
