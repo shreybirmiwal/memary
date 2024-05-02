@@ -35,7 +35,7 @@ chat_agent = ChatAgent(
 )
 
 
-def create_graph(nodes, edges):
+def create_graph():
     g = Network(
         notebook=True,
         directed=True,
@@ -44,10 +44,9 @@ def create_graph(nodes, edges):
         width="100%",
     )
 
-    for node in nodes:
+    for node in st.session_state.nodes:
         g.add_node(node, label=node, title=node)
-    for edge in edges:
-        # assuming only one relationship type per edge
+    for edge in st.session_state.edges:
         g.add_edge(edge[0], edge[1], label=edge[2][0])
 
     g.repulsion(
@@ -60,8 +59,7 @@ def create_graph(nodes, edges):
     return g
 
 
-def fill_graph(nodes, edges, cypher_query):
-    entities = []
+def fill_graph(cypher_query):
     with GraphDatabase.driver(
         uri=chat_agent.neo4j_url,
         auth=(chat_agent.neo4j_username, chat_agent.neo4j_password),
@@ -74,22 +72,20 @@ def fill_graph(nodes, edges, cypher_query):
 
                 n1_id = record["p"].nodes[0]["id"]
                 n2_id = record["p"].nodes[1]["id"]
-                nodes.add(n1_id)
-                nodes.add(n2_id)
-                edges.append((n1_id, n2_id, rels))
-                entities.extend([n1_id, n2_id])
+                st.session_state.nodes.add(n1_id)
+                st.session_state.nodes.add(n2_id)
+                st.session_state.edges.append((n1_id, n2_id, rels))
 
 
 def edit_nodes(edited_nodes):
-    for node, new_value in edited_nodes.items():
-        # Check if the node was edited (compare new value with original value)
-        original_value = nodes[node]  # Assuming nodes is accessible globally
-        if new_value != original_value:
-            print(f"EDITED NODE: {node} - New Value: {new_value}")
+    print(edited_nodes)
+    print(f"EDITED NODE!")
+
 
 def reset_db():
-    #reset the db
+    # reset the db
     print("reset graph")
+
 
 cypher_query = "MATCH p = (:Entity)-[r]-()  RETURN p, r LIMIT 1000;"
 answer = ""
@@ -98,20 +94,18 @@ st.title("memary Demo")
 
 query = st.text_input("Ask a question")
 
-
 img_url = st.text_input("URL of image, leave blank if no image to provide")
 if img_url:
     st.image(img_url, caption="Uploaded Image", use_column_width=True)
 
-
 generate_clicked = st.button("Generate")
-reset_clicked = st.button("Reset DB")
-
-
-if(reset_clicked):
-    reset_db()
 
 st.write("")
+
+if "nodes" not in st.session_state:
+    st.session_state.nodes = set()
+if "edges" not in st.session_state:
+    st.session_state.edges = []
 
 if generate_clicked:
     if img_url:
@@ -140,40 +134,40 @@ if generate_clicked:
     st.text(str(routing_response))
 
     if cypher_query:
-        nodes = set()
-        edges = []  # (node1, node2, [relationships])
-        fill_graph(nodes, edges, cypher_query)
+        fill_graph(cypher_query)
 
         st.subheader("Knowledge Graph")
         st.code("# Current Cypher Used\n" + cypher_query)
         st.write("")
         st.text("Subgraph:")
-        graph = create_graph(nodes, edges)
+        graph = create_graph()
         graph_html = graph.generate_html(f"graph_{random.randint(0, 1000)}.html")
         components.html(graph_html, height=500, scrolling=True)
 
 
-        # this shows all the nodes and allows the user to edit them
-        st.text("Click on the node to edit:")
-        editedNodes = list(nodes)  # Convert the set to a list
-        old_nodes = list(nodes)
-        with st.container(height=200):
-            for i in range(len(editedNodes)):
-                editedNodes[i] = st.text_input(old_nodes[i], editedNodes[i])
 
-        # submit button
-        updateNodesSubmit = st.button("Submit")
+
+
+
+        st.text("Click on the node to edit:")
+        editedNodes = list(st.session_state.nodes) 
+        old_nodes = list(st.session_state.nodes)
+
+        with st.form("node_edit_form"):
+            with st.container(height=200):
+                for i in range(len(editedNodes)):
+                    editedNodes[i] = st.text_input(old_nodes[i], editedNodes[i], key=i)
+
+            submitted = st.form_submit_button("Submit")
+
+        if submitted:
+            print("SUBKITCLICKED FOR UPDATE NODSe!")
+            edited_nodes = dict(zip(old_nodes, editedNodes))
+            edit_nodes(edited_nodes)
 
     else:
         st.subheader("Knowledge Graph")
         st.text("No information found in the knowledge graph")
-
-
-    if(updateNodesSubmit):
-        print("SUBKITCLICKED FOR UPDATE NODSe!")
-        edited_nodes = dict(zip(old_nodes, editedNodes))
-        edit_nodes(edited_nodes)
-
 
     st.subheader("Final Response")
     wrapped_text = textwrap.fill(answer, width=80)

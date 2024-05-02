@@ -1,257 +1,402 @@
 [
     {
         "entity": "President",
-        "count": 53,
+        "count": 107,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Computer programmer",
-        "count": 53,
+        "count": 107,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Sam altman",
-        "count": 61,
+        "count": 124,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Y combinator",
-        "count": 41,
+        "count": 68,
         "date": "2024-04-30T22:29:22"
     },
     {
         "entity": "Investor",
-        "count": 53,
+        "count": 107,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "American entrepreneur",
-        "count": 53,
+        "count": 107,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Research organization",
-        "count": 32,
+        "count": 50,
         "date": "2024-04-30T22:09:17"
     },
     {
         "entity": "Openai",
-        "count": 39,
+        "count": 75,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Developing artificial general intelligence",
-        "count": 32,
+        "count": 50,
         "date": "2024-04-30T22:09:17"
     },
     {
         "entity": "Major cities",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Tourism",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Agriculture",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Technology",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "California",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 204,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "39 million residents",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Entertainment",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "U.s. state",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Individuals",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "U.s.",
-        "count": 78,
-        "date": "2024-04-30T23:04:54"
+        "count": 192,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Ai startup",
-        "count": 15,
+        "count": 24,
         "date": "2024-04-30T22:09:17"
     },
     {
         "entity": "Develop artificial general intelligence",
-        "count": 15,
+        "count": 24,
         "date": "2024-04-30T22:09:17"
     },
     {
         "entity": "Most populous state",
-        "count": 37,
-        "date": "2024-04-30T23:04:54"
+        "count": 124,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "State government",
-        "count": 26,
-        "date": "2024-04-30T23:04:54"
+        "count": 104,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "President of y combinator",
-        "count": 9,
+        "count": 18,
         "date": "2024-04-30T22:29:22"
     },
     {
         "entity": "Elon musk",
-        "count": 20,
+        "count": 56,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Diverse population",
-        "count": 16,
-        "date": "2024-04-30T23:04:54"
+        "count": 85,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Technology industries",
-        "count": 16,
-        "date": "2024-04-30T23:04:54"
+        "count": 85,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "United states",
-        "count": 16,
-        "date": "2024-04-30T23:04:54"
+        "count": 85,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "State",
-        "count": 9,
-        "date": "2024-04-30T23:04:54"
+        "count": 69,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Good relationship",
-        "count": 12,
+        "count": 39,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Co-founder",
-        "count": 12,
+        "count": 39,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Leading",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Development of the electric vehicle market",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Business magnate",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Neuralink",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Advancements in space exploration",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Reducing global warming",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Reducing the risk of human extinction",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Spacex",
-        "count": 10,
-        "date": "2024-04-30T23:04:54"
+        "count": 79,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "The boring company",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Entrepreneur",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Founding",
-        "count": 7,
+        "count": 25,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Co-founding companies",
-        "count": 3,
+        "count": 12,
         "date": "2024-04-30T22:51:35"
     },
     {
         "entity": "Startups",
-        "count": 3,
-        "date": "2024-04-30T23:04:54"
+        "count": 54,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Uber",
-        "count": 3,
-        "date": "2024-04-30T23:04:54"
+        "count": 66,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Airbnb",
-        "count": 3,
-        "date": "2024-04-30T23:04:54"
+        "count": 54,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Public transportation options",
-        "count": 1,
-        "date": "2024-04-30T23:04:54"
+        "count": 43,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Measures",
-        "count": 1,
-        "date": "2024-04-30T23:04:54"
+        "count": 43,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Traffic congestion",
-        "count": 1,
-        "date": "2024-04-30T23:04:54"
+        "count": 43,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Heavy traffic",
-        "count": 1,
-        "date": "2024-04-30T23:04:54"
+        "count": 43,
+        "date": "2024-05-01T19:03:30"
     },
     {
         "entity": "Carpool lanes",
-        "count": 1,
-        "date": "2024-04-30T23:04:54"
+        "count": 43,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Farm-to-table cuisine",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Agricultural industry",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Famous restaurants",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Famous chefs",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Mexican food",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Diverse food culture",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "California-style sushi",
+        "count": 33,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Sacramento",
+        "count": 16,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Area",
+        "count": 16,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Population",
+        "count": 16,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "County",
+        "count": 16,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Deserts",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Mountains",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "San francisco",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Los angeles",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "West coast",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Forests",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Beaches",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "San diego",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Diverse geography",
+        "count": 9,
+        "date": "2024-05-01T19:03:30"
+    },
+    {
+        "entity": "Ride-hailing and transportation network company",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Over 70 countries",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Startup",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Riders with drivers",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Mobile app",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Various services",
+        "count": 12,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Real-time demand and supply",
+        "count": 3,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Dynamic pricing model",
+        "count": 3,
+        "date": "2024-05-01T18:52:51"
+    },
+    {
+        "entity": "Over 60 countries",
+        "count": 3,
+        "date": "2024-05-01T18:52:51"
     }
 ]
