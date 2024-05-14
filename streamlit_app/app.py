@@ -102,6 +102,11 @@ tools = st.multiselect(
 
 if 'Vision' in tools:
     img_url = st.text_input("URL of image, leave blank if no image to provide")
+    picture = st.camera_input("Take a picture using camera")
+
+    if picture:
+        st.image(picture, caption="Uploaded Image", use_column_width=True)
+
     if img_url:
         st.image(img_url, caption="Uploaded Image", use_column_width=True)
 
@@ -132,6 +137,10 @@ if generate_clicked:
 
     if img_url:
         query += "Image URL: " + img_url
+
+    if picture:
+        query += "Image: " + picture
+
     react_response = ""
     rag_response = (
         "There was no information in knowledge_graph to answer your question."
